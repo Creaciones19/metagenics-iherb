@@ -1,0 +1,22 @@
+CATÁLOGO EDITABLE - GUÍA RÁPIDA
+
+ARCHIVOS
+1. index.html: estructura y textos principales de la página.
+2. estilos.css: colores, tamaños, espacios y diseño responsive.
+3. productos.js: los 50 productos, imágenes, precios, presentaciones y fichas.
+4. app.js: buscador, filtros, ventana de detalles, cantidad y WhatsApp.
+
+PARA CAMBIAR UN PRODUCTO
+Abre productos.js, busca el nombre del producto y modifica únicamente el dato necesario.
+
+Ejemplos:
+name: cambia el nombre.
+presentation: cambia la presentación.
+price: cambia el precio sin signo de pesos ni comas.
+summary: cambia la descripción corta.
+detail: cambia la ficha completa.
+image: cambia la imagen principal.
+gallery: cambia las imágenes de la galería.
+
+PARA ABRIR LA PÁGINA
+Abre esta carpeta en Visual Studio Code y ejecuta index.html con Live Server.
