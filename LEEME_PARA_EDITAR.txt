@@ -20,3 +20,15 @@ gallery: cambia las imágenes de la galería.
 
 PARA ABRIR LA PÁGINA
 Abre esta carpeta en Visual Studio Code y ejecuta index.html con Live Server.
+
+NUEVAS FUNCIONES
+- Las fichas muestran para qué sirve la categoría, ingredientes principales,
+  características, modo de uso seguro y advertencias.
+- El carrito conserva los productos en el navegador y genera el pedido completo
+  para WhatsApp.
+- El botón de pago en línea está preparado, pero permanecerá desactivado hasta
+  conectar una cuenta de Mercado Pago o Stripe.
+- La sección de videos contiene cinco temas. Cuando los videos estén listos,
+  se reemplazarán los espacios reservados por los archivos MP4 de HeyGen.
+- El espacio de consulta con avatar en vivo queda reservado para una integración
+  futura con LiveAvatar; actualmente dirige a orientación por WhatsApp.

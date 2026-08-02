@@ -27,7 +27,10 @@
           href="https://wa.me/523343340062?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20productos"
           target="_blank"
           >Asesoría por WhatsApp</a
-        ><button class="menu" aria-label="Abrir menú">☰</button>
+        ><button class="cart-button" id="openCart" type="button">
+          Carrito <span id="cartCount">0</span>
+        </button>
+        <button class="menu" aria-label="Abrir menú">☰</button>
       </div>
     </nav>
     <main>
@@ -105,33 +108,170 @@
         </div>
         <div class="count" id="count"></div>
         <div class="grid" id="grid"></div>
-        <section class="video" id="videos">
-          <div class="videotxt">
-            <div class="eyebrow" style="color: #7ee1dc">Próximamente</div>
-            <h2>Conoce cada fórmula en video</h2>
+        <section class="video-library" id="videos">
+          <div class="video-library-head">
+            <div>
+              <div class="eyebrow">Guía en video</div>
+              <h2>Encuentra información según lo que buscas</h2>
+            </div>
             <p>
-              Esta sección está preparada para incorporar videos creados en
-              HeyGen. Aquí podrás explicar los productos más importantes de
-              manera sencilla, humana y visual.
+              Cinco videos breves creados en HeyGen para conocer las categorías
+              antes de elegir un producto.
             </p>
           </div>
-          <div class="videobox">
-            <div>
-              <div class="play">▶</div>
-              <strong>Espacio reservado para video HeyGen</strong>
-              <p>
-                Formato recomendado: horizontal 16:9 o vertical dentro de una
-                tarjeta.
-              </p>
-            </div>
+
+          <div class="video-topics">
+            <article class="video-topic" data-category="Bienestar femenino">
+              <div class="video-placeholder"><span>▶</span></div>
+              <div class="video-topic-body">
+                <small>VIDEO 01</small>
+                <h3>Bienestar femenino</h3>
+                <p>
+                  Conoce las fórmulas disponibles para las diferentes etapas de
+                  la mujer.
+                </p>
+                <button type="button" class="topic-products">
+                  Ver productos
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="video-topic"
+              data-category="Digestión y probióticos"
+            >
+              <div class="video-placeholder"><span>▶</span></div>
+              <div class="video-topic-body">
+                <small>VIDEO 02</small>
+                <h3>Digestión y probióticos</h3>
+                <p>Descubre opciones para acompañar el equilibrio digestivo.</p>
+                <button type="button" class="topic-products">
+                  Ver productos
+                </button>
+              </div>
+            </article>
+
+            <article class="video-topic" data-category="Vitaminas y minerales">
+              <div class="video-placeholder"><span>▶</span></div>
+              <div class="video-topic-body">
+                <small>VIDEO 03</small>
+                <h3>Vitaminas y minerales</h3>
+                <p>
+                  Aprende a identificar los nutrientes presentes en cada
+                  fórmula.
+                </p>
+                <button type="button" class="topic-products">
+                  Ver productos
+                </button>
+              </div>
+            </article>
+
+            <article class="video-topic" data-category="Omegas y antioxidantes">
+              <div class="video-placeholder"><span>▶</span></div>
+              <div class="video-topic-body">
+                <small>VIDEO 04</small>
+                <h3>Omegas y antioxidantes</h3>
+                <p>
+                  Información sencilla para conocer esta categoría de productos.
+                </p>
+                <button type="button" class="topic-products">
+                  Ver productos
+                </button>
+              </div>
+            </article>
+
+            <article class="video-topic" data-category="Nutrición y proteína">
+              <div class="video-placeholder"><span>▶</span></div>
+              <div class="video-topic-body">
+                <small>VIDEO 05</small>
+                <h3>Nutrición y proteína</h3>
+                <p>
+                  Conoce las presentaciones en polvo y cómo integrarlas a tu
+                  rutina.
+                </p>
+                <button type="button" class="topic-products">
+                  Ver productos
+                </button>
+              </div>
+            </article>
           </div>
         </section>
-        <div class="notice">
-          <strong>Información importante:</strong> Este catálogo presenta
-          suplementos alimenticios. No sustituyen una alimentación equilibrada
-          ni la valoración de un profesional de la salud. Consulta indicaciones,
-          ingredientes y condiciones particulares antes de consumirlos.
-        </div>
+
+        <section class="live-consultation" id="consulta-en-vivo">
+          <div class="live-copy">
+            <div class="eyebrow" style="color: #7ee1dc">Próxima etapa</div>
+            <h2>Consulta con nuestra asesora virtual</h2>
+            <p>
+              Este espacio queda preparado para integrar LiveAvatar en el
+              futuro. Mientras se realiza la conexión, puedes recibir atención
+              directa por WhatsApp.
+            </p>
+            <a
+              class="primary"
+              href="https://wa.me/523343340062?text=Hola%2C%20quiero%20recibir%20orientaci%C3%B3n%20sobre%20los%20productos"
+              target="_blank"
+              >Solicitar orientación</a
+            >
+          </div>
+          <div class="live-stage">
+            <div class="live-avatar-ring">
+              <span>Avatar en vivo</span>
+            </div>
+            <p>Espacio reservado para la integración futura</p>
+          </div>
+        </section>
+
+        <section class="quality-promise" id="calidad">
+          <div class="quality-heading">
+            <div class="eyebrow">Nuestro compromiso de calidad</div>
+            <h2>Confianza y atención en cada pedido</h2>
+            <p>
+              Cuidamos la selección, información y manejo de los productos para
+              ofrecerte una experiencia de compra clara y cercana.
+            </p>
+          </div>
+
+          <div class="quality-grid">
+            <article>
+              <span>01</span>
+              <h3>Productos originales</h3>
+              <p>
+                Trabajamos con productos de las marcas mostradas y conservamos
+                su presentación e información original.
+              </p>
+            </article>
+
+            <article>
+              <span>02</span>
+              <h3>Información clara</h3>
+              <p>
+                Cada ficha presenta ingredientes, características, presentación
+                y precio para ayudarte a tomar una decisión informada.
+              </p>
+            </article>
+
+            <article>
+              <span>03</span>
+              <h3>Manejo responsable</h3>
+              <p>
+                Verificamos la presentación y disponibilidad antes de confirmar
+                cada compra, entrega personal o envío.
+              </p>
+            </article>
+
+            <article>
+              <span>04</span>
+            <h3>Atención personalizada</h3>
+<p>
+  Agenda una consulta por WhatsApp y recibe orientación personalizada para elegir los productos más adecuados para tus necesidades.
+</p>
+            </article>
+          </div>
+        </section>
+      <div class="notice">
+  <strong>Información importante:</strong>
+  Todos nuestros productos son de alta calidad y se encuentran autorizados y regulados por la Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS).
+</div>
       </section>
     </main>
     <footer class="footer">
@@ -148,6 +288,10 @@
           <a href="https://wa.me/523343340062" target="_blank"
             >WhatsApp: 334 334 0062</a
           >
+          <small>
+            <br />Estamos en CDMX y Puebla con entregas personales.<br />
+            Realizamos envíos a toda la República Mexicana.
+          </small>
         </div>
         <div>
           <h3>Navegación</h3>
@@ -178,8 +322,28 @@
           <p id="modalSummary"></p>
           <div class="meta" id="modalPresentation"></div>
           <div class="price" id="modalPrice"></div>
-          <div class="featuretitle">Características y beneficios</div>
-          <div class="fulldetail" id="modalDetail"></div>
+          <div class="product-facts">
+            <section>
+              <h3>¿Para qué sirve?</h3>
+              <p id="modalPurpose"></p>
+            </section>
+            <section>
+              <h3>Ingredientes principales</h3>
+              <p id="modalIngredients"></p>
+            </section>
+            <section>
+              <h3>Características y beneficios</h3>
+              <div class="fulldetail" id="modalDetail"></div>
+            </section>
+            <section>
+              <h3>¿Cómo se toma?</h3>
+              <p id="modalDirections"></p>
+            </section>
+            <section class="fact-warning">
+              <h3>Observación para un mejor uso</h3>
+              <p id="modalWarnings"></p>
+            </section>
+          </div>
           <div class="buyrow">
             <label class="qty"
               >Cantidad<select id="modalQty">
@@ -194,10 +358,57 @@
                 <option>9</option>
                 <option>10</option>
               </select></label
-            ><a class="primary" id="modalWhats" target="_blank"
-              >Comprar con nosotros por WhatsApp</a
+            ><button
+              class="primary add-cart-modal"
+              id="modalAddCart"
+              type="button"
+            >
+              Agregar al carrito
+            </button>
+            <a class="primary whatsapp-buy" id="modalWhats" target="_blank"
+              >Comprar por WhatsApp</a
             >
           </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-head">
+        <div>
+          <small>Tu pedido</small>
+          <h2>Carrito de compra</h2>
+        </div>
+        <button id="closeCart" type="button" aria-label="Cerrar carrito">
+          ×
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty">Todavía no agregas productos.</div>
+      <div class="cart-summary">
+        <div><span>Total</span><strong id="cartTotal">$0</strong></div>
+        <a class="cart-whatsapp" id="cartWhatsApp" target="_blank">
+          Finalizar pedido por WhatsApp
+        </a>
+        <button class="cart-payment" type="button" disabled>
+          Pago en línea — próximamente
+        </button>
+        <small>
+          El pago en línea se activará cuando se conecte una cuenta de cobro.
+        </small>
+      </div>
+    </aside>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <div class="video-modal" id="videoModal" aria-hidden="true">
+      <div class="video-modal-panel">
+        <button id="closeVideo" type="button" aria-label="Cerrar video">
+          ×
+        </button>
+        <div class="video-coming">
+          <div class="play">▶</div>
+          <h2 id="videoModalTitle">Video próximamente</h2>
+          <p>Aquí se colocará el video de HeyGen cuando esté terminado.</p>
         </div>
       </div>
     </div>
