@@ -1177,281 +1177,153 @@ a {
   .links {
     display: none;
   }
-
   .menu {
     display: block;
     margin-left: auto;
   }
-
   .navcta {
     display: none;
   }
-
   .heroin {
     grid-template-columns: 1fr;
     padding-top: 60px;
   }
-
   .heroart {
     height: 420px;
   }
-
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .trust {
     margin: -28px 18px 0;
   }
-
   .controls {
     grid-template-columns: 1fr;
   }
-
   .video {
     grid-template-columns: 1fr;
   }
-
   .footerin {
     grid-template-columns: 1fr 1fr;
   }
-
   .panel {
-    width: min(760px, 100%);
-    max-width: 100%;
     grid-template-columns: 1fr;
-    overflow-x: hidden;
   }
-
   .modalimg {
-    width: 100%;
-    min-width: 0;
     min-height: 300px;
-    padding: 24px;
-    overflow: hidden;
   }
-
-  .modalimg > img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
+  .modalimg img {
     height: 260px;
-    object-fit: contain;
-  }
-
-  .thumbs {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    overflow: hidden;
-  }
-
-  .thumbs button {
-    flex: 0 0 58px;
-    width: 58px;
-    max-width: 58px;
-    height: 58px;
-  }
-
-  .close {
-    z-index: 999;
-    pointer-events: auto;
   }
 }
-
 @media (max-width: 620px) {
   .topbar {
     font-size: 11px;
   }
-
   .navin {
     height: 65px;
     padding: 0 16px;
   }
-
   .brand {
     font-size: 20px;
     gap: 10px;
   }
-
   .brand small {
     font-size: 15px;
   }
-
   .hero {
     min-height: auto;
   }
-
   .heroin {
     padding: 48px 18px 60px;
     gap: 15px;
   }
-
   .hero h1 {
     font-size: 52px;
   }
-
   .hero p {
     font-size: 16px;
   }
-
   .actions {
     align-items: flex-start;
     flex-direction: column;
   }
-
   .heroart {
     height: 330px;
   }
-
   .trust {
     grid-template-columns: 1fr;
     margin-top: -18px;
   }
-
   .trust div {
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
-
   .section {
     padding: 72px 16px;
   }
-
   .sectionhead {
     display: block;
   }
-
   .grid {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
-
   .photo {
     height: 175px;
   }
-
   .body {
     padding: 13px;
   }
-
   .card h3 {
     font-size: 14px;
   }
-
   .summary {
     display: none;
   }
-
   .price {
     font-size: 21px;
   }
-
   .cardactions {
     grid-template-columns: 1fr;
   }
-
   .wa {
     text-align: center;
   }
-
   .video {
     margin-top: 60px;
   }
-
   .videotxt {
     padding: 34px 24px;
   }
-
   .videotxt h2 {
     font-size: 36px;
   }
-
   .footerin {
     grid-template-columns: 1fr;
   }
-
-  .modal {
-    padding: 8px;
-    overflow-y: auto;
-    align-items: start;
-  }
-
   .panel {
     display: block;
-    width: 100%;
-    max-width: 100%;
-    max-height: none;
-    margin: 8px auto;
-    overflow-x: hidden;
-    border-radius: 20px;
   }
-
-  .modalimg {
-    width: 100%;
-    min-width: 0;
-    min-height: auto;
-    padding: 20px 12px;
-    overflow: hidden;
-  }
-
-  .modalimg > img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 260px;
-    object-fit: contain;
-  }
-
-  .thumbs {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .thumbs button {
-    flex: 0 0 58px;
-    width: 58px;
-    max-width: 58px;
-    height: 58px;
-  }
-
   .modalbody {
-    width: 100%;
-    min-width: 0;
     padding: 30px 22px;
   }
-
-  .close {
-    top: 12px;
-    right: 12px;
-    z-index: 9999;
-    pointer-events: auto;
-    touch-action: manipulation;
+  .modalimg {
+    padding: 20px;
   }
-
   .chips {
     flex-wrap: nowrap;
     overflow: auto;
     padding-bottom: 4px;
   }
-
   .chip {
     white-space: nowrap;
   }
-
   .sectionhead h2 {
     font-size: 42px;
   }
 }
+
 /* =========================================================
    COMPROMISO DE CALIDAD
 ========================================================= */
